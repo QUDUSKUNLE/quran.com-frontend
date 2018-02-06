@@ -4,6 +4,7 @@ import loadable from 'loadable-components';
 import { Switch, Route } from 'react-router';
 
 import Home from './containers/Home';
+import NotFound from './components/NotFound';
 
 import {
   chaptersConnect,
@@ -189,6 +190,7 @@ const Routes = ({ store }) => (
         }}
       />
     ))}{' '}
+    <Route component={NotFound} />
   </Switch>
 );
 
